@@ -11,7 +11,7 @@ while True:
     emotion  = results[0]['dominant_emotion']
     cv2.putText(img,f'Emotion: {emotion}',(50,50),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),1)
     cv2.imshow("video", img)
-    //when q encoutered it stops
+   
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
         cap.release()
